@@ -3,8 +3,8 @@
 - 1对多，多对1，多对多
 ### 功能 ###
 - 通信：数据的传播
-- 同步：在执行进度在取得一致
-![test]()  
+- 同步：在执行进度在取得一致  
+![test](11.png)  
 - 计算：给定数据完成一定的操作(`归约`)
     - 组内消息通信
     - 计算`(归约)`
@@ -72,10 +72,10 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
-![test]()  
+![test](12.png)  
 -  MpI收集接口：`MPI_GatherV(sendbuf,sendcount,sendtype,recvbuf,recvcounts,displs,recvtype,root,comm)`
 
-- displs:数组(不同长度)
+- **displs:数组(不同长度)**
 
 ## 02组通信-散发 ##
 - MPI_Scatter (sendbuf,sendcount,sendtype,recvbuf,recvcount,recvtype,root,comm)
@@ -122,7 +122,7 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
-![test]()
+![test](13.png)
 
 - MPI_SCATTERV(sendbuf,**sendcounts**,**displs**,sendtype,recvbuf,recvcount,recvtype,root,comm)
 
