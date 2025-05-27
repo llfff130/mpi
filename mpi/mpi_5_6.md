@@ -10,7 +10,7 @@
     - op：归约操作
     - root：接收结果的进程
     - comm：通信域
-## (op) #3
+## (op) ##
 |操作|	描述|
 |----|-----|
 |MPI_MAX	|最大值|
@@ -104,5 +104,5 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
-![test]()
+![test](a.png)  
 ### Gauss-Seidel ###
